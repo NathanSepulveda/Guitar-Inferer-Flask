@@ -1,0 +1,15 @@
+body {
+    font-family: avenir;
+    background:aliceblue;
+}
+
+#guitar-name {
+    text-decoration: underline;
+}
+
+.picture-cont {
+    max-width: fit-content;
+    border-radius: 20px;
+    box-shadow: 11px 23px 41px 0 rgb(255 255 255 / 30%), -0.5px -1px 4px 0 rgb(0 0 0 / 26%);
+    background-image: linear-gradient(135deg, rgba(0,0,0,0.255), rgba(255,255,255,0.25));
+}
