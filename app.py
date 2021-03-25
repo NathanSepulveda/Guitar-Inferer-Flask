@@ -3,14 +3,14 @@ from fastai.imports import *
 from fastai.learner import load_learner
 # from fastai.vision.widgets import *
 from fastai.vision.core import PILImage
-path = Path()
-print(path.ls(file_exts='.pkl'))
-learn_inf = load_learner(path/'export.pkl')
-predict = learn_inf.predict('test2.jpeg')[0]
 from flask import Flask, request, render_template
 import os
 import glob
 from flask import send_file
+path = Path()
+print(path.ls(file_exts='.pkl'))
+learn_inf = load_learner(path/'export.pkl')
+
 app = Flask(__name__)
 
 #Defining the home page for the web service
