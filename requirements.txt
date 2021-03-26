@@ -37,7 +37,7 @@ pytz==2021.1
 PyYAML==5.4.1
 requests==2.25.1
 scikit-learn==0.24.1
-scipy==1.6.1
+scipy==1.5.4
 setuptools==52.0.0.post20210125
 six==1.15.0
 spacy==2.3.5
