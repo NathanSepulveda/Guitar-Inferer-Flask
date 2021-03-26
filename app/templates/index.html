@@ -3,19 +3,33 @@
   <head>
     <title></title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
   </head>
   <body>
     <div class="bd-example" align="middle" style="font-family: avenir">
       <h1>Your Results</h1>
       <!-- <div class="picture-cont" style="max-width: fit-content;"> -->
-      <img src="{{ user_image }}" style="max-height: 500px; border-radius: 15px" alt="User Image" />
-    <!-- </div> -->
+      <img
+        src="{{ user_image }}"
+        style="max-height: 500px; border-radius: 15px"
+        alt="User Image"
+      />
+      <!-- </div> -->
       <!-- src="/static/upload/test.jpeg" -->
       <p>
-        The guitar picture you uploaded is a <u>{{guitar_type}}</u>. I am {{prob}}%
-        sure! 
+        The guitar picture you uploaded is a <u>{{guitar_type}}</u>. I am
+        {{prob}}% sure!
       </p>
+    </div>
+    <div class="bd-example" align="middle">
+      <h3>Try to upload another Les Paul or a Strat!</h3>
+      <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file1" />
+        <input type="submit" />
+      </form>
     </div>
   </body>
 </html>
