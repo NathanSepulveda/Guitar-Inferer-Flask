@@ -23,7 +23,7 @@ matplotlib==3.3.4
 murmurhash==1.0.5
 numpy==1.19
 packaging==20.9
-pandas==1.2.3
+pandas==1.1.5
 Pillow==8.1.2
 pip==21.0.1
 plac==1.1.3
